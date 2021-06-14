@@ -1,0 +1,49 @@
+<html>
+
+               <body>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+                <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+                              <div class="w3-container">
+                                <input class="w3-radio" type="radio" name="gender" id ="S" onclick = "showSearch()">
+                                <label>Type your movie title</label>
+                                
+                                <input class="w3-radio" type="radio" name="gender" id = "Q" onclick = "showQuick()">
+                                <label>Quick Search</label>
+
+                                <div class="w3-bar w3-light-grey">
+                                  <div id = "search" class = "w3-bar-item">
+                                  <input type = "text" id = "movie">
+                                  <button  class ="w3-button" onclick="getMovie()">Submit Search</button>
+                                  </div>
+
+                                  <div id = "checkbox" class="w3-dropdown-hover">
+                                    <button class = "w3-button w3-diplay-bottommiddle">Dropdown</button>
+                                    <div class="w3-dropdown-content w3-white w3-card-4">
+                                      <input class="w3-check" type="checkbox" id = "SW" value="Star Wars">
+                                      <label>Star Wars</label>
+                                      
+                                      <input class="w3-check" type="checkbox" id = "TESB" value="The Empire Strikes Back">
+                                      <label>The Empire Strikes Back</label>
+                                      
+                                      <input class="w3-check" type="checkbox" id = "ROTJ" value="Return Of The Jedi">
+                                      <label>Return Of The Jedi</label>
+                                    </div>
+                                    <div class = "w3-bar-item">
+                                      <button  class ="w3-button" onclick="getDD()">Quick Search</button>
+                                    </div>
+                                  </div>
+                                </div>
+                               </div> 
+
+                               <br>
+                               
+                              <h5>Movie Title:  &nbsp; <span id="title"></span></h5><br>
+                              <h5>Director:  &nbsp; <span id = "director"></span></h5><br>
+                              <h5>Movie plot:  &nbsp; <span id = "plot"></span></h5><br>
+                              <h5>Actors and Actresses:  &nbsp; <span id = "actors"></span></h5><br>
+                              <h5>Poster</h5>
+                              <img id="poster">
+                              <script src = "movie.js"></script>
+               </body>
+
+</html>
